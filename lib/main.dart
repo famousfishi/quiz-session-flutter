@@ -8,16 +8,10 @@ class MyApp extends StatelessWidget{
   const MyApp({Key? key}) : super(key: key);
 
   void answerQuestion() {
-    print('Answer 1');
+    print('Answer chosen');
   }
 
-   void answerQuestionTwo() {
-    print('Answer 2');
-  }
-
-   void answerQuestionThree() {
-    print('Answer 3');
-  }
+   
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +22,8 @@ class MyApp extends StatelessWidget{
        [
          const Text('The questions!'),
           ElevatedButton(onPressed: answerQuestion, child: const Text('Answer 1')),
-          ElevatedButton(onPressed: answerQuestionTwo, child: const Text('Answer 2')),
-          ElevatedButton(onPressed: answerQuestionThree, child: const Text('Answer 3')),
+          ElevatedButton(onPressed: answerQuestion, child: const Text('Answer 2')),
+          ElevatedButton(onPressed: answerQuestion, child: const Text('Answer 3')),
       ],)
     ),
     debugShowCheckedModeBanner: false,
